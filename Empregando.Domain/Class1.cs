@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Empregando.Domain
 {
-    public class Class1
+    public class Teste
     {
     }
 }
