@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Empregando.Domain
+namespace Empregando.Domain.Entities
 {
-    public class Teste
+    public class Usuario
     {
+
     }
 }
