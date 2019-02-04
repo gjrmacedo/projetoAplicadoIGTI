@@ -51,9 +51,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Empregando.Domain\Empregando.Domain.csproj">
+    <ProjectReference Include="..\Empregando.Adm.Domain\Empregando.Adm.Domain.csproj">
       <Project>{13B88716-7F91-43C8-BD56-D841CCEAE4C1}</Project>
-      <Name>Empregando.Domain</Name>
+      <Name>Empregando.Adm.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

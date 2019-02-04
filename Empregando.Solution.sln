@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empregando.Domain", "Empregando.Domain\Empregando.Domain.csproj", "{13B88716-7F91-43C8-BD56-D841CCEAE4C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empregando.Adm.Domain", "Empregando.Adm.Domain\Empregando.Adm.Domain.csproj", "{13B88716-7F91-43C8-BD56-D841CCEAE4C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empregando.API", "Empregando.API\Empregando.API.csproj", "{502CAE2E-BDF8-40DF-A8FB-570EBD26713C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empregando.Adm.API", "Empregando.Adm.API\Empregando.Adm.API.csproj", "{502CAE2E-BDF8-40DF-A8FB-570EBD26713C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empregando.Data", "Empregando.Data\Empregando.Data.csproj", "{0363935A-842E-4DE1-9227-96D7B56F8A83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empregando.Adm.Data", "Empregando.Adm.Data\Empregando.Adm.Data.csproj", "{0363935A-842E-4DE1-9227-96D7B56F8A83}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Administrativo", "Administrativo", "{C41E9D00-B790-4294-9A16-10DE6DF99EB9}"
 EndProject
