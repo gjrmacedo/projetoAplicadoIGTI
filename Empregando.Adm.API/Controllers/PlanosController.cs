@@ -8,6 +8,12 @@ using System.Web.Http;
 
 namespace Empregando.API.Controllers
 {
+    public class Plano
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+    }
+
     /// <summary>
     /// Planos
     /// </summary>
@@ -15,25 +21,21 @@ namespace Empregando.API.Controllers
     public class PlanosController : ApiController
     {
         /// <summary>
-        /// Obter o plano pelo id
-        /// </summary>
-        [HttpGet]
-        [Route("planos/{id}")]
-        public async Task<IHttpActionResult> Get([FromUri]Guid id)
-        {
-            System.Threading.Thread.Sleep(5000);
-
-            return Ok(0);
-        }
-
-        /// <summary>
         /// Listar todos os planos
         /// </summary>
         [HttpGet]
         [Route("planos")]
         public IHttpActionResult Get()
         {
-            return Ok();
+            var response = new List<Plano>()
+            {
+                new Plano() { Id = 1, Nome = "Experimental" },
+                new Plano() { Id = 2, Nome = "Básico" },
+                new Plano() { Id = 3, Nome = "Intermediário" },
+                new Plano() { Id = 4, Nome = "Avançado" }
+            };
+
+            return Ok(response);
         }
     }
 }

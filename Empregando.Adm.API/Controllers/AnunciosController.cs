@@ -43,8 +43,9 @@ namespace Empregando.API.Controllers
         /// </summary>
         [HttpPut]
         [Route("anuncios/{id:guid}/inactive")]
-        public IHttpActionResult Inactive([FromUri]DesativarAnuncioRequest request) 
+        public IHttpActionResult Inactive([FromUri]Guid id) 
         {
+            DesativarAnuncioRequest request = new DesativarAnuncioRequest();
             var command = CommandAdapter.ToDesativarAnuncioCommand(request); 
 
             Handler.Handle(command);

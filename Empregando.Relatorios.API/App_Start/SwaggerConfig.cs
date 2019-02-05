@@ -1,12 +1,12 @@
 using System.Web.Http;
 using WebActivatorEx;
-using Empregando.API;
+using Empregando.Relatorios.API;
 using Swashbuckle.Application;
 using System;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace Empregando.API
+namespace Empregando.Relatorios.API
 {
     public class SwaggerConfig
     {
@@ -15,13 +15,13 @@ namespace Empregando.API
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>
                 {
-                    c.SingleApiVersion("v1", "Empregando.Adm.API");
+                    c.SingleApiVersion("v1", "Empregando.Relatorios.API");
                     c.PrettyPrint();
                     c.UseFullTypeNameInSchemaIds();
                     c.IncludeXmlComments(string.Format(@"{0}\bin\Swagger.XML",
                            AppDomain.CurrentDomain.BaseDirectory));
                 })
                 .EnableSwaggerUi();
-        }        
+        }
     }
 }

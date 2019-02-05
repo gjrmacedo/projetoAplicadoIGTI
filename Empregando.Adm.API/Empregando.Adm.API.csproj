@@ -27,7 +27,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -35,7 +35,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Empregando.API.xml</DocumentationFile>
+    <DocumentationFile>bin\Swagger.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -163,7 +163,6 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\SessaoUsuario.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\PesquisaAnunciosController.cs" />
     <Compile Include="Controllers\AnunciosController.cs" />
     <Compile Include="Controllers\EmpresasController.cs" />
     <Compile Include="Controllers\PlanosController.cs" />
@@ -192,10 +191,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="DTOs\Responses\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\EmpregandoAdmAPI - Web Deploy.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Empregando.Adm.Domain\Empregando.Adm.Domain.csproj">
